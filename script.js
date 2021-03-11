@@ -124,8 +124,8 @@ const DOM = {
 // Função para formatar a moeda
 const Util = {
     formatAmount(amount) {
-        value = Number(amount.replace(/\.\,/)) * 100
-        return value
+        value = Number(amount) * 100
+        return Math.round(value)
     },
 
     formatDate(date) {
